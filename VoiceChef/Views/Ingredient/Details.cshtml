@@ -1,0 +1,74 @@
+﻿@model VoiceChef.Models.Ingredient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ingredient</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NamePieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamePieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngNamePieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngNamePieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teaspoon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teaspoon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tablespoon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tablespoon)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

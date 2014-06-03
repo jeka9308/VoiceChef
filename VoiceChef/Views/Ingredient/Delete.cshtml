@@ -1,0 +1,80 @@
+﻿@model VoiceChef.Models.Ingredient
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ingredient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NamePieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamePieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngNamePieces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngNamePieces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teaspoon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teaspoon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tablespoon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tablespoon)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
